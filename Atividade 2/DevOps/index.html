@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevOps - Guia Completo</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+
+<body>
+  <header>
+    <h1>DevOps - Guia Completo</h1>
+    <nav>
+      <ul>
+        <li>
+          <a href="#introducao"><i class="fas fa-lightbulb"></i> Introdução</a>
+        </li>
+        <li>
+          <a href="#praticas"><i class="fas fa-cogs"></i> Práticas</a>
+        </li>
+        <li>
+          <a href="#ferramentas"><i class="fas fa-tools"></i> Ferramentas</a>
+        </li>
+        <li>
+          <a href="#beneficios"><i class="fas fa-chart-line"></i> Benefícios</a>
+        </li>
+        <li>
+          <a href="#conclusao"><i class="fas fa-clipboard-check"></i> Conclusão</a>
+        </li>
+        <li>
+          <a href="#bibliografia"><i class="fa-solid fa-desktop"></i>Bibliografia</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="container" id="introducao">
+    <div class="intro">
+      <div class="texto">
+        <br> <br>
+        <h2>Introdução</h2>
+        <p class="textoParagrafo">
+          <i class="fas fa-lightbulb"></i>
+          DevOps é um conjunto de práticas, ferramentas e uma filosofia
+          cultural que automatizam e integram os processos entre o
+          desenvolvimento de software e as equipes de TI. Ele enfatiza o
+          empoderamento da equipe, a comunicação e a colaboração entre equipes
+          e a automação da tecnologia.
+        </p>
+        <br />
+        <p class="textoParagrafo">
+          Essa prática surgiu por volta de 2007, como resposta aos desafios
+          enfrentados pelo desenvolvimento tradicional, onde as equipes
+          trabalhavam separadas, dificultando a comunicação e a integração. Ao
+          unir desenvolvimento (Dev) e operações (Ops), o DevOps otimiza
+          processos e melhora a experiência dos usuários.
+        </p>
+        <br />
+        <p class="textoParagrafo">
+        <h3>Como o DevOps funciona? </h3>
+        Em uma equipe de DevOps, desenvolvedores e operações de TI trabalham em colaboração durante todo o ciclo de vida
+        do produto, a fim de aumentar a velocidade e a qualidade da implementação do software. É uma nova forma de
+        trabalhar, uma mudança cultural que tem grandes implicações para as equipes e as empresas em que elas trabalham.
+        </p>
+        <br />
+
+        <p class="textoParagrafo">
+
+          Com o modelo de DevOps, as equipes de desenvolvimento e operações não ficam mais fragmentadas. Às vezes, essas
+          duas equipes se unem em uma só, com os engenheiros trabalhando em todo o ciclo de vida do aplicativo — desde
+          desenvolvimento e testes até implementação e operações — e adquirindo uma série de habilidades
+          multidisciplinares.
+        </p>
+        <br />
+        <p class="textoParagrafo">
+          As equipes de DevOps usam ferramentas para automatizar e acelerar processos, o que ajuda a aumentar a
+          confiabilidade. Uma cadeia de ferramentas de DevOps ajuda as equipes a abordar importantes fundamentos do
+          DevOps, incluindo integração contínua, entrega contínua, automação e colaboração.
+        </p>
+        <p class="textoParagrafo">
+          Às vezes, os valores do DevOps são aplicados a outras equipes além do desenvolvimento. Quando as equipes de
+          segurança adotam uma abordagem de DevOps, a segurança passa a ser uma parte ativa e integrada do processo de
+          desenvolvimento. O nome disso é DevSecOps.
+        </p>
+        <br />
+        <p class="textoParagrafo">
+        <h3>O ciclo de vida de DevOps </h3>
+        Devido à natureza contínua de DevOps, os profissionais usam o ciclo infinito para mostrar como as fases do ciclo
+        de vida de DevOps se relacionam entre si. Apesar de parecer fluir em sequência, o ciclo simboliza a necessidade
+        de colaboração constante e melhoria iterativa ao longo de todo o ciclo de vida.
+        </p>
+        <br />
+        <img width="1000px" src="imagens/CicloDeVidaDevOps.png" alt="CicloDeVidaDevOps">
+        <p class="textoParagrafo">
+          O ciclo de vida de DevOps consiste em seis fases, que representam os processos, recursos e ferramentas
+          necessários para o desenvolvimento (no lado esquerdo do ciclo) e para as operações (no lado direito do ciclo).
+          Ao longo de cada fase, as equipes colaboram e se comunicam para manter o alinhamento, a velocidade e a
+          qualidade.
+        </p>
+        <br />
+      </div>
+    </div>
+  </section>
+
+  <section class="container" id="praticas">
+    <div class="intro">
+      <div class="texto">
+        <h2>Práticas</h2>
+        <p class="textoParagrafo">
+        <h3>(CI - Continuous Integration)</h3>
+
+        A integração contínua é uma prática de desenvolvimento de software
+        de DevOps em que os desenvolvedores, com frequência, juntam suas
+        alterações de código em um repositório central. Depois disso,
+        compilações e testes são executados. Geralmente, a integração
+        contínua é a fase de compilação ou integração do processo de
+        lançamento de software e consiste em um componente de automação (por
+        exemplo, um serviço de CI ou compilação) e um componente cultural
+        (por exemplo: aprender a integrar com frequência). Os principais
+        objetivos da integração contínua são encontrar e investigar erros
+        mais rapidamente, melhorar a qualidade do software e reduzir o tempo
+        necessário para validar e lançar novas atualizações de software.
+        </p>
+        <br />
+        <p class="textoParagrafo">
+        <h3>(CD - Continuous Delivery)</h3>
+        Continuous delivery é um conjunto de práticas voltadas para assegurar que o script seja adicionado rapidamente e
+        de forma segura na produção. Isso inclui a entrega contínua de alterações em um ambiente funcional e a garantia
+        de que aplicativos e serviços empresariais operem conforme o esperado, utilizando testes automatizados
+        rigorosos.
+
+        O propósito é desenvolver, avaliar softwares e liberá-los de maneira mais ágil e frequente. Esse processo
+        envolve a execução de todas as funcionalidades planejadas em um fluxo de trabalho repetível, utilizando um
+        pipeline de deployment que permite implementar mudanças com um simples clique (“one-click deployment”).
+        </p>
+        <br />
+
+        <p class="textoParagrafo">
+        <h3>(IaC - Infrastructure as Code)</h3>
+        Infraestrutura como código é um processo de gerenciamento de infraestrutura de TI que aplica as práticas
+        recomendadas do desenvolvimento de software DevOps ao gerenciamento de recursos de infraestrutura de nuvem. Os
+        recursos de infraestrutura adequados são máquinas virtuais, redes, balanceadores de carga, bancos de dados e
+        outros aplicativos em rede.
+
+        A IaC é uma forma de gerenciamento de configuração que codifica os funções de infraestrutura de uma empresa em
+        arquivos de texto. Esses arquivos de infraestrutura passam então por commit para um sistema de controle de
+        versão como o Git. O repositório de controle de versão permite fluxos de trabalho de ramificação de funções e
+        solicitação pull, que são dependências fundamentais de CI/CD.
+        </p>
+        <br />
+
+        <p class="textoParagrafo">
+        <h3>Automação</h3>
+        Automação de DevOps é a adoção de tecnologias que executam tarefas com o mínimo possível de interferência humana
+        nos processos que viabilizam os loops de feedback entre as equipes de desenvolvimento e operações. Dessa forma,
+        é possível acelerar a implantação de atualizações iterativas em aplicações no ambiente de produção.
+        </p>
+        <br />
+        <p class="textoParagrafo">
+        <h4>Automatização - Provisionamento</h4>
+        Os ambientes de DevOps compreendem diversas tecnologias. O provisionamento e a implantação de mudanças nesses
+        ambientes complexos podem ser demorados e exigir um conhecimento muito específico de cada componente. Com as
+        abordagens de Infraestrutura como código (IaC) unidas à automação, as equipes de TI podem disponibilizar
+        funcionalidades de self-service e entregar configurações e recursos pré-aprovados com pouca intervenção manual.
+        </p>
+        <br />
+        <p class="textoParagrafo">
+        <h4>Automatização - Desenvolvimento</h4>
+        Os desenvolvedores de software precisam de recursos de TI para criar, testar e implantar novas aplicações e
+        serviços de maneira contínua. A execução manual de operações de TI pode atrasar esses recursos e complicar o
+        pipeline de entrega de serviços. Isso pode prejudicar o desempenho das provas de conceitos e, por fim, provocar
+        uma lentidão no desenvolvimento. Com a combinação entre a automação e um design otimizado para a interface de
+        programação de aplicações (API), as equipes de TI disponibilizam recursos com mais rapidez para acelerar tarefas
+        relacionadas a provas de conceitos, desenvolvimento, testes (com projetos open source de automação de testes
+        como o Jenkins) e implantação.
+        </p>
+        <br />
+        <p class="textoParagrafo">
+        <h3>Contêineres em DevOps</h3>
+        Ambientes de nuvem tornam a virtualização mais fácil e rápida para desenvolvedores, e contêineres desempenham um
+        papel integral como uma sandbox virtualizada, contendo tudo para executar processos ou microsserviços para um
+        aplicativo maior. Pense neles como caixas de brinquedos com tudo o que você precisa para brincar.
+
+        Os contêineres permitem que os desenvolvedores empacotem tudo o que é necessário para executar um aplicativo — o
+        código, os tempos de execução e as ferramentas do sistema — em um local conveniente. Isso permite que os
+        desenvolvedores criem os aplicativos e os implantem em servidores com o próprio sistema operacional, o que torna
+        os contêineres muito leves e portáteis.
+        </p>
+        <br />
+
+        <p class="textoParagrafo">
+        <h3>Microsserviços </h3>
+        As aplicações são desmembradas em componentes menores e independentes que, mesmo separados, trabalham juntos
+        para executar as tarefas.
+        </p>
+
+        <br />
+        <p class="textoParagrafo">
+        <h3>Monitoramento Contínuo </h3>
+        Ter visibilidade completa e em tempo real do desempenho e da integridade de toda a pilha de aplicativos.
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="container" id="ferramentas">
+    <div class="TituloFerramentas">
+      <h2>Ferramentas Principais</h2>
+    </div>
+    <div class="ferramentas-container">
+      <div class="ferramenta">
+        <img src="imagens/docker.png" alt="Docker" />
+        <p class="textoParagrafo">
+          Docker é uma plataforma de código aberto que permite criar,
+          implantar e gerenciar aplicativos em contêineres.
+        </p>
+      </div>
+      <div class="ferramenta">
+        <img src="imagens/Kubernetes.png" alt="Kubernetes" />
+        <p class="textoParagrafo">
+          Kubernetes é um sistema de orquestração de contêineres que
+          automatiza a implantação, o dimensionamento e a operação de
+          aplicativos em contêineres.
+        </p>
+      </div>
+      <div class="ferramenta">
+        <img src="imagens/Jenkins.png" alt="Jenkins" />
+        <p class="textoParagrafo">
+          Jenkins é uma ferramenta de automação de código aberto usada para
+          implementar integração contínua e facilitar o processo de
+          desenvolvimento de software.
+        </p>
+      </div>
+      <div class="ferramenta">
+        <img src="imagens/Git.png" alt="Git" />
+        <p class="textoParagrafo">
+          Git é um sistema de controle de versão distribuído usado para
+          rastrear mudanças no código-fonte durante o desenvolvimento de
+          software.
+        </p>
+      </div>
+
+      <div class="ferramenta">
+        <img src="imagens/Npm.png" alt="Npm" />
+        <p class="textoParagrafo">
+          O npm é um repositório popular para publicar projetos Node.js de
+          código aberto, permitindo que desenvolvedores compartilhem seus
+          códigos. Pacotes famosos disponíveis incluem Angular, React e
+          jQuery.
+        </p>
+      </div>
+
+      <div class="ferramenta">
+        <img src="imagens/openstack.png" alt="OpenStack" />
+        <p class="textoParagrafo">
+          O OpenStack® oferece uma infraestrutura em nuvem modular e executável em hardware padrão. Assim, você pode
+          implantar as ferramentas que quiser, no momento que precisar, tudo a partir de um único ambiente.
+        </p>
+      </div>
+
+      <div class="ferramenta">
+        <img src="imagens/AzureDevOps.png" alt="AzureDevOps" />
+        <p class="textoParagrafo">
+          Solução de DevOps exclusiva para corresponder ao sistema interno do Microsoft Azure, o Azure DevOps combina
+          pipelines e open-sources personalizáveis e automatizados para se adequar a carga de trabalho e corresponder
+          perfeitamente à cloud.
+        </p>
+      </div>
+
+      <div class="ferramenta">
+        <img src="imagens/Graylog.png" alt="Npm" />
+        <p class="textoParagrafo">
+          Graylog é uma plataforma de análise e gerenciamento de logs de código aberto que ajuda organizações a coletar,
+          armazenar e analisar dados de logs de várias fontes. Ela oferece recursos poderosos de pesquisa e
+          visualização, o que a torna valiosa para uma ampla gama de casos de uso.
+        </p>
+      </div>
+    </div>
+
+
+    <img id="mainImage" width="1000px" src="imagens/Devopsferramentas.jpeg" alt="Devopsferramentas"
+      onclick="openModal()">
+
+    <div id="imageModal" class="modal" onclick="closeModal()">
+
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modalImg">
+    </div>
+  </section>
+  <section class="container" id="beneficios">
+    <div class="intro">
+      <div class="texto">
+        <h2>Benefícios </h2>
+        <h3>Colaboração e confiança </h3>
+        <p class="textoParagrafo">
+
+          Criar uma cultura de responsabilidade compartilhada, transparência e feedback mais rápido é a base de toda
+          equipe de DevOps de alto desempenho. Na verdade, a colaboração e a solução de problemas são os elementos
+          classificados como os mais importantes de uma cultura bem-sucedida de DevOps, de acordo com nossa pesquisa de
+          Tendências de DevOps de 2020.
+        </p>
+        <br />
+        <p class="textoParagrafo">
+
+          As equipes que trabalham em silos, de modo geral, não aderem ao raciocínio sistêmico que o DevOps defende.
+          Raciocínio sistêmico é estar ciente de como suas ações não apenas afetam a sua equipe, mas todas as outras
+          equipes envolvidas no processo de lançamento. A falta de visibilidade e de metas compartilhadas gera a falta
+          de planejamento de dependências, prioridades desalinhadas, busca de culpados e a mentalidade “não é problema
+          da gente”, resultando em menor velocidade e qualidade abaixo do padrão. O DevOps é essa mudança de mentalidade
+          ao analisar o processo de desenvolvimento de maneira holística e derrubar a barreira entre desenvolvimento e
+          operações.
+        </p>
+        <br />
+        <h3>Libere versões mais rapidamente e trabalhe de modo mais inteligente </h3>
+        <p class="textoParagrafo">
+
+          Velocidade é tudo. Equipes que praticam DevOps lançam versões com mais frequência e com qualidade e
+          estabilidade maiores. Na verdade, o relatório “2019 State of DevOps” da DORA descobriu que equipes de elite
+          implementaram com uma frequência 208 vezes maior e 106 vezes mais rápido do que equipes de baixo desempenho.
+        </p>
+        <br />
+        <p class="textoParagrafo">
+
+          A falta de ciclos automatizados de teste e revisão atrasa o lançamento em produção, e o tempo de resposta a
+          incidentes insatisfatório prejudica a velocidade e a confiança da equipe. Ferramentas e processos distintos
+          aumentam os custos operacionais, levam à mudança de contexto e desaceleram o ritmo. No entanto, com
+          ferramentas que impulsionam a automação e processos novos, as equipes podem aumentar a produtividade e lançar
+          com mais frequência com menos contratempos.
+        </p>
+        <br />
+        <h3>Acelere o tempo de resolução </h3>
+        <p class="textoParagrafo">
+
+          A equipe com o ciclo de feedback mais rápido é a que prospera.
+          Transparência total e comunicação contínua possibilitam às equipes de DevOps minimizar o tempo de inatividade
+          e resolver itens mais rápido.
+        </p>
+        <br />
+        <p class="textoParagrafo">
+
+          Se problemas críticos não forem resolvidos logo, a satisfação do cliente diminui. Problemas importantes entram
+          pelas frestas na ausência de comunicação aberta, resultando em maior tensão e frustração entre as equipes.
+          Comunicação aberta ajuda as equipes de Desenvolvimento e Operações a atacar problemas, corrigir incidentes e
+          desbloquear o pipeline de lançamento mais rápido.
+        </p>
+        <br />
+        <h3>Gerencie melhor o trabalho não planejado </h3>
+        <p class="textoParagrafo">
+
+          Trabalho não planejado é uma realidade que todas as equipes enfrentam — uma realidade que costuma afetar a
+          produtividade da equipe. Com processos estabelecidos e priorização clara, as equipes de Desenvolvimento e
+          Operações podem gerenciar melhor o trabalho não planejado, enquanto continuam a focar no trabalho planejado..
+        </p>
+        <br />
+        <p class="textoParagrafo">
+
+          Fazer a transição e priorizar o trabalho não planejado em diferentes equipes e sistemas é ineficiente e
+          distrai do trabalho em questão. Porém, com maior visibilidade e retrospecção proativa, as equipes podem prever
+          e compartilhar melhor o trabalho não planejado.
+        </p>
+        <br />
+        <p class="textoParagrafo">
+
+          As equipes que adotam por completo as práticas de DevOps trabalham melhor e com mais rapidez, além de oferecer
+          melhor qualidade aos clientes. O aumento do uso da automação e da colaboração multifuncional reduz a
+          complexidade e os erros, o que, por sua vez, melhora o Tempo Médio de Recuperação (MTTR) quando ocorrem
+          incidentes e interrupções.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="container" id="conclusao">
+    <div class="intro">
+      <div class="texto">
+        <h2>Conclusão</h2>
+        <p class="textoParagrafo">
+
+          Ao longo deste guia, exploramos o conceito de DevOps e como ele
+          revolucionou a maneira como as empresas desenvolvem, entregam e mantêm
+          seus produtos de software. No mundo atual, onde a tecnologia evolui
+          rapidamente e a demanda por eficiência e qualidade é maior do que
+          nunca, a adoção de DevOps se tornou um fator crucial para a
+          competitividade das organizações. Essa abordagem, que une
+          desenvolvimento e operações, quebra silos organizacionais, incentiva a
+          colaboração e promove uma cultura voltada para a automação e melhoria
+          contínua.
+        </p>
+        <br />
+        <p class="textoParagrafo"></p>
+        A agilidade proporcionada pelo DevOps permite que empresas
+        reduzam drasticamente o tempo entre a concepção de uma ideia e sua
+        implementação prática, garantindo entregas mais rápidas e frequentes.
+        O conceito de Integração Contínua (CI) e Entrega Contínua (CD) tornam
+        possível a implementação de mudanças sem comprometer a estabilidade
+        dos sistemas, permitindo que novas funcionalidades cheguem aos
+        usuários com mais rapidez e segurança. Além disso, a capacidade de
+        monitoramento contínuo e feedback em tempo real garante que possíveis
+        falhas sejam detectadas e corrigidas antes mesmo de impactar os
+        clientes.
+        </p>
+        <br />
+        <p class="textoParagrafo"></p>
+        Outro fator essencial do DevOps é a automação, que minimiza
+        erros humanos e melhora a eficiência operacional. Ferramentas como
+        Docker, Kubernetes, Jenkins e Terraform desempenham papéis
+        fundamentais nesse processo, garantindo que a infraestrutura seja
+        gerenciada de forma programática, escalável e previsível. A automação
+        não apenas agiliza processos, mas também melhora a segurança,
+        reduzindo riscos associados a configurações manuais e implementações
+        inconsistentes.
+        </p>
+        <br />
+        <p class="textoParagrafo"></p>
+        Além dos benefícios técnicos, a adoção do DevOps traz
+        impactos significativos para a cultura organizacional. A mentalidade
+        DevOps incentiva uma abordagem de aprendizado contínuo, onde equipes
+        trabalham juntas, compartilham conhecimento e adotam uma postura de
+        responsabilidade conjunta pelo ciclo de vida do software. Isso reduz
+        conflitos entre equipes de desenvolvimento e operações, tornando a
+        comunicação mais fluida e eficiente.
+        </p>
+        <br />
+        <p class="textoParagrafo"></p>
+
+
+        Os benefícios da implementação do
+        DevOps não se restringem apenas a empresas de tecnologia. Setores como
+        finanças, saúde, e-commerce e telecomunicações já adotam essa
+        abordagem para melhorar a experiência do cliente, garantir maior
+        confiabilidade em seus serviços e acelerar a inovação. Empresas que
+        implementaram DevOps corretamente relatam reduções significativas no
+        tempo de recuperação após falhas, maior estabilidade nos serviços e
+        maior satisfação dos usuários finais.
+        </p>
+        <br />
+        <p class="textoParagrafo"></p>
+        Diante de todos esses fatores,
+        fica evidente que o DevOps não é apenas uma metodologia, mas um
+        diferencial estratégico para qualquer empresa que deseja crescer e
+        inovar no mercado atual. A capacidade de lançar produtos com rapidez,
+        manter serviços estáveis e seguros, além de fomentar uma cultura de
+        colaboração e aprendizado contínuo, coloca o DevOps como uma abordagem
+        indispensável para o desenvolvimento moderno de software. Empresas que
+        ignoram essa tendência correm o risco de ficarem para trás, enquanto
+        aquelas que adotam essa filosofia estarão sempre um passo à frente,
+        preparadas para enfrentar os desafios da era digital. Portanto, se
+        você busca eficiência, inovação, segurança e agilidade, o DevOps é o
+        caminho certo. O futuro do desenvolvimento de software pertence às
+        empresas que compreendem a importância da automação, da colaboração e
+        da melhoria contínua. Adotar DevOps não é apenas uma escolha, mas uma
+        necessidade para quem deseja se destacar e prosperar no cenário
+        tecnológico atual.
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="container" id="bibliografia">
+    <div class="intro">
+      <div class="texto">
+        <h2>Bibliografia</h2>
+        <p class="textoParagrafo">
+          O que é o DevOps? DevOps explicado | Microsoft Azure. Disponível em:
+          https://azure.microsoft.com/pt-br/resources/cloud-computing-dictionary/what-is-devops
+        </p>
+        <br>
+        <p class="textoParagrafo">
+          ATLASSIAN. O que é DevOps? Disponível em: https://www.atlassian.com/br/devops
+        </p>
+        <br>
+        <p class="textoParagrafo">
+          AWS DevOps - O que é DevOps? - Amazon Web Services. Disponível em:
+          https://aws.amazon.com/pt/devops/what-is-devops/
+        </p>
+        <br>
+        <p class="textoParagrafo">
+          DevOps: o que é DevOps? Disponível em: https://www.redhat.com/pt-br/topics/devops#processos-devops. Acesso em:
+          26 fev. 2025
+        </p>
+        <br>
+        <p class="textoParagrafo">
+          DEVOPS - O que faz, formação, salários | Quero Bolsa. Disponível em:
+          https://querobolsa.com.br/carreiras-e-profissoes/devops
+        </p>
+        <br>
+        <p class="textoParagrafo">
+          L, A. O que É npm? Introdução Básica para Iniciantes. Disponível em:
+          https://www.hostinger.com.br/tutoriais/o-que-e-npm
+        </p>
+        <br>
+        <p class="textoParagrafo">
+          ANÁTHALY KLEINA. Segurança em DevOps: DevSecOps. Disponível em: https://blog.convisoappsec.com/__trashed/.
+          Acesso em: 26 fev. 2025
+        </p>
+        <br>
+        <p class="textoParagrafo">
+          What are Containers in DevOps? Disponível em:
+          https://www-pagerduty-com.translate.goog/resources/learn/what-are-containers-devops/?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt&_x_tr_pto=tc.
+          Acesso em: 26 fev. 2025
+        </p>
+        <br>
+        <p class="textoParagrafo">
+          O que é automação de DevOps? Disponível em:
+          https://www.redhat.com/pt-br/topics/automation/what-is-devops-automation
+        </p>
+        <br>
+        <p class="textoParagrafo">
+          ATLASSIAN. Infraestrutura como código (IaC) | Atlassian. Disponível em:
+          https://www.atlassian.com/br/microservices/cloud-computing/infrastructure-as-code Acesso em: 26 fev. 2025
+        </p>
+        <br>
+        <p class="textoParagrafo">
+          Continuous delivery: entenda esse conceito e como implementar! Disponível em:
+          https://blog.cronapp.io/continuous-delivery/#O_que_e_continuous_delivery Acesso em: 26 fev. 2025
+        </p>
+        <br>
+        <p class="textoParagrafo">
+          Entrega contínua: o que é e para que serve? Disponível em:
+          https://www.redhat.com/pt-br/topics/devops/what-is-continuous-delivery
+        </p>
+        <br>
+        <p class="textoParagrafo">
+          O que significa integração contínua? – Amazon Web Services. Disponível em:
+          https://aws.amazon.com/pt/devops/continuous-integration/
+        </p>
+        <br>
+        <p class="textoParagrafo">
+          Introdução ao OpenStack. Disponível em: https://www.redhat.com/pt-br/topics/openstack Acesso em: 26 fev. 2025
+        </p>
+        <br>
+        <p class="textoParagrafo">
+          Azure DevOps: o que é e como usar? | Lattine Group. Disponível em:
+          https://lattinegroup.com/microsoft-azure/azure-devops-o-que-e-como-usar/ Acesso em: 26 fev. 2025
+        </p>
+        <br>
+        <p class="textoParagrafo"></p>
+        ASHWANI K. What is Graylog and use cases of Graylog? - DevOpsSchool.com. Disponível em:
+        https://www-devopsschool-com.translate.goog/blog/what-is-graylog-and-use-cases-of-graylog/?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt&_x_tr_pto=tc
+        Acesso em: 26 fev. 2025
+        </p>
+        <br>
+        <p class="textoParagrafo"></p>
+        Docker | O que é Docker e como ele funciona? Disponível em:
+        https://www.redhat.com/pt-br/topics/containers/what-is-docker
+        </p>
+        <br>
+        <p class="textoParagrafo"></p>
+        O que é o Kubernetes? Disponível em: https://cloud.google.com/learn/what-is-kubernetes?hl=pt-br
+        </p>
+        <br>
+        <p class="textoParagrafo"></p>
+        GO CACHE. O que é Jenkins? Para iniciantes - GoCache. Disponível em:
+        https://gocache.com.br/dicas/o-que-e-jenkins-para-iniciantes/ Acesso em: 26 fev. 2025
+        </p>
+        <br>
+        <p class="textoParagrafo"></p>
+        ATLASSIAN. O que é Git | Atlassian Git Tutorial. Disponível em:
+        https://www.atlassian.com/br/git/tutorials/what-is-git
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Guia DevOps. Desenvolvido por Felipe Ferreira De Souza.</p>
+  </footer>
+</body>
+
+</html>
+
+<script>
+  function openModal() {
+    var modal = document.getElementById("imageModal");
+    var modalImg = document.getElementById("modalImg");
+    var mainImg = document.getElementById("mainImage");
+
+    modal.style.display = "block";
+    modalImg.src = mainImg.src;
+  }
+
+  function closeModal() {
+    document.getElementById("imageModal").style.display = "none";
+  }
+</script>
