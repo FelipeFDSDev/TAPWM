@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Jokenpô</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Jokenpô</h1>
+    <div class="game">
+        <div class="selection-buttons">
+            <button data-choice="pedra">Pedra</button>
+            <button data-choice="papel">Papel</button>
+            <button data-choice="tesoura">Tesoura</button>
+        </div>
+        <div class="choices-display">
+            <div class="choice">
+                <img id="userImage" src="" alt="Sua Escolha" style="display: none;">
+                <span id="userChoiceText">Você</span>
+            </div>
+            <span>vs</span>
+            <div class="choice">
+                <img id="computerImage" src="" alt="Escolha do Computador" style="display: none;">
+                <span id="computerChoiceText">Computador</span>
+            </div>
+        </div>
+        <div class="result-area">
+            <h2 id="outcome">Resultado: -</h2>
+            <p id="userScore">Você venceu: 0 vezes</p>
+            <p id="computerScore">Computador venceu: 0 vezes</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
