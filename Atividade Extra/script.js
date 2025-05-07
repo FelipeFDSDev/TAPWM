@@ -45,12 +45,21 @@ function gerarPalavras() {
         return;
     }
 
-    let palavras = [];
 
-    while (palavras.length < 10) {
+    const letrasUnicas = new Set(letras);
+    if (letrasUnicas.size === 1) {
+        alert("Não é possível gerar palavras distintas com 5 letras iguais.");
+        return;
+    }
+
+    let palavras = [];
+    let tentativas = 0;
+
+    while (palavras.length < 10 && tentativas < 100) {
         let copia = [...letras];
         let palavra = "";
 
+     
         while (copia.length > 0) {
             let index = Math.floor(Math.random() * copia.length);
             palavra += copia.splice(index, 1);
@@ -59,9 +68,14 @@ function gerarPalavras() {
         if (!palavras.includes(palavra)) {
             palavras.push(palavra);
         }
+        tentativas++;
     }
 
-    alert("10 palavras geradas:\n" + palavras.join(", "));
+    if (palavras.length === 0) {
+        alert("Não foi possível gerar palavras distintas.");
+    } else {
+        alert("10 palavras geradas:\n" + palavras.join(", "));
+    }
 }
 
 
