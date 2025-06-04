@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 2 - Contas Bancárias</title>
+    <link rel="stylesheet" href="conta.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sistema Bancário</h1>
+        
+        <div class="form-container">
+            <h2>Criar Conta</h2>
+            <div class="tabs">
+                <button class="tab-button active" onclick="openTab('corrente')">Conta Corrente</button>
+                <button class="tab-button" onclick="openTab('poupanca')">Conta Poupança</button>
+            </div>
+            
+            <div id="corrente" class="tab-content">
+                <div class="input-group">
+                    <label for="nome-corrente">Nome do Correntista:</label>
+                    <input type="text" id="nome-corrente" placeholder="Digite o nome">
+                </div>
+                <div class="input-group">
+                    <label for="banco-corrente">Banco:</label>
+                    <input type="text" id="banco-corrente" placeholder="Digite o banco">
+                </div>
+                <div class="input-group">
+                    <label for="conta-corrente">Número da Conta:</label>
+                    <input type="text" id="conta-corrente" placeholder="Digite o número da conta">
+                </div>
+                <div class="input-group">
+                    <label for="saldo-corrente">Saldo:</label>
+                    <input type="number" id="saldo-corrente" placeholder="Digite o saldo">
+                </div>
+                <div class="input-group">
+                    <label for="saldo-especial">Saldo Especial:</label>
+                    <input type="number" id="saldo-especial" placeholder="Digite o saldo especial">
+                </div>
+                <button onclick="criarContaCorrente()">Criar Conta Corrente</button>
+            </div>
+            
+            <div id="poupanca" class="tab-content" style="display:none">
+                <div class="input-group">
+                    <label for="nome-poupanca">Nome do Correntista:</label>
+                    <input type="text" id="nome-poupanca" placeholder="Digite o nome">
+                </div>
+                <div class="input-group">
+                    <label for="banco-poupanca">Banco:</label>
+                    <input type="text" id="banco-poupanca" placeholder="Digite o banco">
+                </div>
+                <div class="input-group">
+                    <label for="conta-poupanca">Número da Conta:</label>
+                    <input type="text" id="conta-poupanca" placeholder="Digite o número da conta">
+                </div>
+                <div class="input-group">
+                    <label for="saldo-poupanca">Saldo:</label>
+                    <input type="number" id="saldo-poupanca" placeholder="Digite o saldo">
+                </div>
+                <div class="input-group">
+                    <label for="juros">Taxa de Juros (%):</label>
+                    <input type="number" id="juros" placeholder="Digite a taxa de juros">
+                </div>
+                <div class="input-group">
+                    <label for="vencimento">Data de Vencimento:</label>
+                    <input type="date" id="vencimento">
+                </div>
+                <button onclick="criarContaPoupanca()">Criar Conta Poupança</button>
+            </div>
+        </div>
+        
+        <div id="resultados" class="resultados-container"></div>
+    </div>
+    <script src="conta.js"></script>
+</body>
+</html>
