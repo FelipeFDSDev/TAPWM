@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Validação</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulário de Contato</h1>
+        <form name="meuForm" id="meuForm" onsubmit="return validar()">
+            <div class="form-group">
+                <label for="nome" class="required">Nome:</label>
+                <input type="text" id="nome" name="nome">
+                <div class="error" id="nomeError">O nome deve ter pelo menos 10 caracteres</div>
+                <div class="char-count" id="nomeCharCount">0/10 caracteres</div>
+            </div>
+            
+            <div class="form-group">
+                <label for="email" class="required">Email:</label>
+                <input type="email" id="email" name="email">
+                <div class="error" id="emailError">Por favor, insira um email válido</div>
+            </div>
+            
+            <div class="form-group">
+                <label for="comentario" class="required">Comentário:</label>
+                <textarea id="comentario" name="comentario"></textarea>
+                <div class="error" id="comentarioError">O comentário deve ter pelo menos 20 caracteres</div>
+                <div class="char-count" id="comentarioCharCount">0/20 caracteres</div>
+            </div>
+            
+            <div class="form-group">
+                <label class="required">Já visitou nossa página antes?</label>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="pesquisa" value="sim"> Sim
+                    </label>
+                    <label>
+                        <input type="radio" name="pesquisa" value="nao"> Não
+                    </label>
+                </div>
+                <div class="error" id="pesquisaError">Por favor, selecione uma opção</div>
+            </div>
+            
+            <button type="submit">Enviar</button>
+        </form>
+        
+        <div class="success-message" id="successMessage"></div>
+    </div>
+
+    <script>
+        
+    </script>
+</body>
+</html>
