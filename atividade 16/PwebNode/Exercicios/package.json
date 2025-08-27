@@ -1,0 +1,16 @@
+{
+  "name": "site_fatec",
+  "version": "1.0.0",
+  "description": "Site da FATEC Sorocaba",
+  "license": "ISC",
+  "author": "Felipe Ferreira De Souza",
+  "type": "commonjs",
+  "main": "callback1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  },
+  "devDependencies": {}
+}
